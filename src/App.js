@@ -36,7 +36,7 @@ function App() {
           importWallet || showModal || walletCn ? "blur-sm" : "blur-none"
         }`}
       >
-        <Navbar />
+        <Navbar setShowModal={setShowModal}/>
         <Tabs />
         <div className="max-w-[1400px] mx-auto">
           <div className="bg-[#252120] rounded-md p-3 border border-slate-800 my-5">

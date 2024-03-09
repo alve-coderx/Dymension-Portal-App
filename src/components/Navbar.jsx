@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.jpg";
 
-const Navbar = () => {
+const Navbar = ({setShowModal}) => {
   const links = ["RollApps", "Dymension", "IBC Bridge", "Liquidity", "Info"];
   return (
     <div className="grid grid-cols-3  p-3">
@@ -20,7 +20,7 @@ const Navbar = () => {
         />
       </div>
       <div className="text-end">
-        <button className="bg-[#f1e1d4] px-3 py-2 rounded-md font-semibold">
+        <button onClick={()=> setShowModal(true)} className="bg-[#f1e1d4] px-3 py-2 rounded-md font-semibold">
           Connect
         </button>
       </div>

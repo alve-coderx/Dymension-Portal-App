@@ -12,47 +12,50 @@ const Matrics = ({ title, score, rate }) => {
   );
 };
 
-const Tabs = () => {
+const Tabs = ({ setShowModal }) => {
   return (
     <div className="max-w-[1400px] mx-auto">
       <div class="border-b border-gray-200 dark:border-gray-700">
         <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
           <button
             type="button"
-            class="hs-tab-active:font-semibold hs-tab-active:border-[#f1e1d4] hs-tab-active:text-[#f1e1d4] py-4 px-4 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-gray-500 hover:text-[#f1e1d4] focus:outline-none focus:text-[#f1e1d4] disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500 active"
+            className="hs-tab-active:font-semibold hs-tab-active:border-[#f1e1d4] hs-tab-active:text-[#f1e1d4] py-4 px-4 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-gray-500 hover:text-[#f1e1d4] focus:outline-none focus:text-[#f1e1d4] disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500 active"
             id="tabs-with-underline-item-1"
             data-hs-tab="#tabs-with-underline-1"
             aria-controls="tabs-with-underline-1"
             role="tab"
+            onClick={() => setShowModal(true)}
           >
             Metrics
           </button>
           <button
             type="button"
-            class="hs-tab-active:font-semibold hs-tab-active:border-[#f1e1d4] hs-tab-active:text-[#f1e1d4] py-4 px-4 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-gray-500 hover:text-[#f1e1d4] focus:outline-none focus:text-[#f1e1d4] disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500"
+            className="hs-tab-active:font-semibold hs-tab-active:border-[#f1e1d4] hs-tab-active:text-[#f1e1d4] py-4 px-4 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-gray-500 hover:text-[#f1e1d4] focus:outline-none focus:text-[#f1e1d4] disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500"
             id="tabs-with-underline-item-2"
             data-hs-tab="#tabs-with-underline-2"
             aria-controls="tabs-with-underline-2"
             role="tab"
+            onClick={() => setShowModal(true)}
           >
             Staking
           </button>
           <button
             type="button"
-            class="hs-tab-active:font-semibold hs-tab-active:border-[#f1e1d4] hs-tab-active:text-[#f1e1d4] py-4 px-4 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-gray-500 hover:text-[#f1e1d4] focus:outline-none focus:text-[#f1e1d4] disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500"
+            className="hs-tab-active:font-semibold hs-tab-active:border-[#f1e1d4] hs-tab-active:text-[#f1e1d4] py-4 px-4 inline-flex items-center gap-x-2 border-b-2 border-transparent whitespace-nowrap text-gray-500 hover:text-[#f1e1d4] focus:outline-none focus:text-[#f1e1d4] disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500"
             id="tabs-with-underline-item-3"
             data-hs-tab="#tabs-with-underline-3"
             aria-controls="tabs-with-underline-3"
             role="tab"
+            onClick={() => setShowModal(true)}
           >
             Governance
           </button>
         </nav>
       </div>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-3 py-6">
-        <Matrics title="TVL" score="$19.72M"/>
-        <Matrics title="Total Addresses Count" score="2.16% (7d)"/>
-        <Matrics title="Staking APR" score="0.02% (24h)"/>
+        <Matrics title="TVL" score="$19.72M" />
+        <Matrics title="Total Addresses Count" score="2.16% (7d)" />
+        <Matrics title="Staking APR" score="0.02% (24h)" />
       </div>
     </div>
   );

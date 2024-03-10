@@ -40,21 +40,21 @@ function App() {
         <Tabs setShowModal={setShowModal} />
         <div className="max-w-[1400px] mx-auto">
           <div className="bg-[#252120] rounded-md p-3 border border-slate-800 my-5">
-            <div className="flex items-start justify-between">
+            <div className="flex md:flex-row flex-col items-start justify-between">
               <div>
                 <p className="text-slate-400 text-lg">Total Supply</p>
                 <div className="flex items-center gap-2 py-2">
-                  <p className="text-[#f1e1d4] text-md font-semibold">
+                  <p className="text-[#f1e1d4] md:text-md text-sm font-semibold">
                     1,007,195,003 DYM
                   </p>
-                  <p className="text-[#59F0BE] text-sm font-semibold">
+                  <p className="text-[#59F0BE] md:text-sm text-xs font-semibold">
                     0.02% (24h)
                   </p>
                 </div>
               </div>
               <img src={date} alt="date" />
             </div>
-            <div className="grid md:grid-cols-2 justify-items-center grid-cols-2 gap-5 ">
+            <div className="grid md:grid-cols-2 justify-items-center grid-cols-1 gap-5 ">
               <PieChart1 />
               <PieChart2 />
             </div>

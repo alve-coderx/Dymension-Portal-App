@@ -14,8 +14,8 @@ const Modal = ({
   setCurrentWallet,
 }) => {
   return (
-    <div className="transition-10 duration-50 justify-center items-center flex fixed top-0 inset-0  z-50 outline-0 ">
-      <div className="lg:w-[440px] w-[22.6rem]  py-4 lg:px-4 md:px-9 px-4 rounded-md  bg-[#252120] drop-shadow-2xl border border-gray-700">
+    <div className="transition-10 duration-50 justify-center items-center flex fixed top-0 inset-0 p-1 z-50 outline-0 ">
+      <div className="lg:w-[440px] w-full  py-4 px-2 rounded-md  bg-[#252120] drop-shadow-2xl border border-gray-700">
         <>
           <div className="flex items-start justify-between text-white font-[600] text-lg border-b border-gray-600 py-5">
             <div>
